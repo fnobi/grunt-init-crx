@@ -20,19 +20,12 @@ module.exports = function(grunt) {
                     environment: 'development'
                 }
             }
-        },
-        koko: {
-            dev: {
-                openPath: '/popup.html'
-            }
         }
     });
 
-    grunt.loadNpmTasks('grunt-koko');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-compass');
 
-    grunt.registerTask('server', ['koko:dev']);
     grunt.registerTask('build', ['compass:dev']);
     grunt.registerTask('default', ['build']);
 };

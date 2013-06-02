@@ -34,8 +34,9 @@ exports.template = function (grunt, init, done) {
             version         : '0.1.0',
             node_version    : '>=0.8.0 <0.9.1',
             devDependencies : {
-                'grunt'                   : '~0.4.0',
-                'grunt-koko'              : '~0.1.0'
+                'grunt': '~0.4.0',
+                'grunt-contrib-compass': '~0.2.0',
+                'grunt-contrib-watch': '~0.4.4'
             }
         });
 
